@@ -1,5 +1,5 @@
 # common-prefix
-A function to find a common prefix for list of words
+A function to find the longest common prefix string amongst an array of strings.
 
 ### To run function 
 
