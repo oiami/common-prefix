@@ -7,7 +7,7 @@ function findCommonPrefix(strs) {
   //loop to each character
   for (let i = 0; i < first.length; i++) {
     const curr = first.charAt(i);
-    for (let j = 1; j < strs.length; j++) {
+    for (let j = 0; j < strs.length; j++) {
       if (curr === strs[j].charAt(i)) {
         // if the same char found run continue the checking
         // loop to the last
@@ -16,7 +16,8 @@ function findCommonPrefix(strs) {
         }
       } else {
         // if the mismatch found just stop checking
-        break;
+        j = strs.length;
+        i = first.length;
       }
     }
   }

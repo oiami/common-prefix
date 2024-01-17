@@ -11,9 +11,13 @@ test("return common prefix", () => {
 });
 
 test("return empty string when no common prefix found", () => {
-  expect(findCommonPrefix(["dog", "racecar", "car"])).toEqual("");
+  expect(findCommonPrefix(["racecar", "dog", "car"])).toEqual("");
 });
 
 test("return empty string when just some/partial common prefix found", () => {
   expect(findCommonPrefix(["dog", "racecar", "rat"])).toEqual("");
+});
+
+test("return empty string when just some/partial common prefix found", () => {
+  expect(findCommonPrefix(["a"])).toEqual("a");
 });
